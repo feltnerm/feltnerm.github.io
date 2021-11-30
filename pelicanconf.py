@@ -9,7 +9,7 @@ EMAIL = 'mark@feltner.me'
 SITEURL = ''
 DESCRIPTION = "The thoughts and writings of Mark James Feltner."
 
-THEME = 'theme/feltnerm-pelican-theme'
+THEME = 'theme/feltnerm'
 DEVELOP = True
 
 PATH = 'content'
