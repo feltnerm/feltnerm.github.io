@@ -1,0 +1,35 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish@v2
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2.5.0
+    - name: Build theme
+      run: cd theme/feltnerm && npm ci
+    - uses: actions/setup-python@v2
+      with:
+        python-version: "3.9"
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Build site
+      run: |
+        make publish
+    - name: Publish to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2.5.0
+      with:
+        keep_history: true
+        build_dir: output
+        # fqdn: # optional
+        jekyll: false
+        verbose: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
