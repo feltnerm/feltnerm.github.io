@@ -1,0 +1,90 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/** Sitewide styles **/
+time {
+  font-style: italic;
+}
+code {
+  font-family: "Source Code Pro", monospace;
+}
+.highlight pre {
+  background-color: #f7f7f7;
+  padding: 16px;
+}
+pre > code {
+  font-family: "Source Code Pro", monospace;
+}
+/** header **/
+header.site-header {
+  margin-bottom: 21px;
+}
+header.site-header h1 a {
+  font-size: 80%;
+}
+/** content **/
+/** nav **/
+nav.site-nav {
+  padding-top: 16px;
+}
+nav.site-nav ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+nav.site-nav ul > li {
+  display: inline;
+}
+span.center {
+  display: block;
+  text-align: center;
+}
+/** footer **/
+footer.site-footer {
+  text-align: center;
+}
+footer.site-footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+footer.site-footer ul li {
+  display: inline;
+}
+footer.site-footer .footer-copyright {
+  font-family: "Lora", serif;
+}
+/** Page Styles
+ **/
+/** Index **/
+/**     header **/
+.article-container .article-meta .article-meta-date {
+  font-family: "Lora", serif;
+}
+ol.index-ol li {
+  list-style-type: none;
+}
+.index-article-meta .index-article-meta-date {
+  font-family: "Lora", serif;
+}
+.index-article-meta .index-article-meta-git ul {
+  list-style-type: none;
+}
+.index-article-meta .index-article-meta-git ul li {
+  display: inline;
+}
+.index-article-header {
+  margin-bottom: 0rem;
+}
+/**     body **/
+.article-container {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/**     footer **/
+/** Article **/
+/**     header **/
+/**     body **/
+/**     footer **/

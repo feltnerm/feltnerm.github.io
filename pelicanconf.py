@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Mark Feltner'
-SITENAME = "Mark Feltner's Weblog"
-SITENAME_SHORT = "Mark Feltner's Weblog"
+SITENAME = "Mark Feltner's Website"
+SITENAME_SHORT = "Mark Feltner's Website"
 EMAIL = 'mark@feltner.me'
 SITEURL = ''
 DESCRIPTION = "The thoughts and writings of Mark James Feltner."

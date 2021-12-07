@@ -12,16 +12,15 @@
     <!-- Site Metadata -->
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     <meta name="author" content="{{ AUTHOR }}">
-<meta name="description" content="{% block description %}{% if article and article.summary %}{{ article.summary | striptags }}{% else %}{{ DESCRIPTION | striptags }}{% endif %}{% endblock %}">
+    <meta name="description" content="{% block description %}{% if article and article.summary %}{{ article.summary | striptags }}{% else %}{{ DESCRIPTION | striptags }}{% endif %}{% endblock %}">
+
 
     <link rel="canonical" href="{{ SITEURL }}">
-    <link rel="humans" type="text/plain" href="{{ SITEURL }}/humans.txt">
-    <link rel="hackers" type="text/plain" href="{{ SITEURL }}/hackers.txt">
+    {% include "includes/styles.html" %}
     {% include "includes/feeds.html" %}
     {% include "includes/favicons.html" %}
-    {% include "includes/styles.html" %}
-    <script type="text/javascript" src="{{SITE_URL}}/theme/bundle.js"></script>
-
+    <link rel="humans" type="text/plain" href="{{ SITEURL }}/humans.txt">
+    <link rel="hackers" type="text/plain" href="{{ SITEURL }}/hackers.txt">
 </head>
     <body>
         <!--[if lt IE 7]>
