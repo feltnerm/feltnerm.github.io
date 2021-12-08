@@ -1,4 +1,4 @@
-title: about
+title: index
 
 <span class="center">
 [![Mark Feltner's Avatar](/theme/images/avatar.png)](/about)

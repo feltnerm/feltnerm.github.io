@@ -58,17 +58,30 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
-ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+DIRECT_TEMPLATES = ['index', 'archives', 'tags']
+
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 PAGE_URL = '{slug}/'
-PAGE_SAVE_AS = '{slug}/index.html'
-ARCHIVES_SAVE_AS = 'posts/index.html'
-YEAR_ARCHIVE_SAVE_AS='posts/{date:%Y}/index.html'
-MONTH_ARCHIVE_SAVE_AS='posts/{date:%Y}/{date:%m}/index.html'
-DAY_ARCHIVE_SAVE_AS='posts/{date:%Y}/{date:%m}/{date:%d}/index.html'
-AUTHORS_SAVE_AS=''
+PAGE_SAVE_AS = '{slug}.html'
+INDEX_SAVE_AS = 'blog/index.html'
+ARCHIVES_URL = 'blog/archive'
+ARCHIVES_SAVE_AS = 'blog/archive/index.html'
+YEAR_ARCHIVE_URL = 'blog/{date:%Y}/'
+YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
+MONTH_ARCHIVE_URL = 'blog/{date:%Y}/{date:%m}'
+MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
+DAY_ARCHIVE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/'
+DAY_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/index.html'
+TAG_URL = 'blog/tag/{slug}/'
+TAG_SAVE_AS = 'blog/tag/{slug}/index.html'
+TAGS_URL = 'blog/tags/'
+TAGS_SAVE_AS = 'blog/tags/index.html'
+
+# don't generate these:
+AUTHOR_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 CATEGORIES_SAVE_AS = ''
 
