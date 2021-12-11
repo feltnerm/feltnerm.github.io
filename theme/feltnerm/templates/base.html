@@ -27,17 +27,20 @@
             <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class='container'>
-            <div class='row'>
+        <div class='feltnerm-container'>
+            <div class='feltnerm-header'>
                 {% include 'includes/header.html' %}
                 {% include 'includes/nav.html' %}
+                {% block header %}{% endblock %}
             </div>
 
-            <div class='row'>
+            <div class='feltnerm-content'>
                 {% block content %}{% endblock %}
             </div>
 
-            <div class='row'>
+            <hr></hr>
+
+            <div class='feltnerm-footer'>
                 {% include 'includes/footer.html' %}
             </div>
 

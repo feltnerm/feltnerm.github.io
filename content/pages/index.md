@@ -1,7 +1,9 @@
 title: index
+show_title: false
+----
 
 <span class="center">
-[![Mark Feltner's Avatar](/theme/images/avatar.png)](/about)
+[![Mark Feltner's Avatar](/theme/images/avatar.png)](/)
 </span>
 
 My name is Mark Feltner. I have a passion for writing good software.

@@ -1,17 +1,13 @@
 {% block nav %}
-<div class='five columns'>
-    <nav class='site-nav'>
-        <ul>
-            <li><a href="{{ SITE_URL }}/">home</a> · </li>
-            <li><a href="{{ SITE_URL }}/blog">blog</a> · </li>
-            <li><a href="{{ SITE_URL }}/projects">projects</a></li>
-        </ul>
-    </nav>
-    <nav class='site-nav'>
-        <ul>
-            <li><a href="{{ SITE_URL }}/blog/archive">archive</a> · </li>
-            <li><a href="{{ SITE_URL }}/blog/tags">tags</a></li>
-        </ul>
-    </nav>
+<div class='feltnerm-header-nav'>
+    <div class='feltnerm-main-nav'>
+        <nav aria-label="Main">
+            <ul class="inline-list">
+                <li><a href="{{ SITE_URL }}/">home</a> · </li>
+                <li><a href="{{ SITE_URL }}/blog">blog</a> · </li>
+                <li><a href="{{ SITE_URL }}/projects">projects</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
 {% endblock %}

@@ -1,22 +1,18 @@
 {% extends 'base.html' %}
 {% block title %}{% if article and article.title %}{{ article.title | striptags }} | {{ SITENAME_SHORT }}{% else %}{{ SITENAME }}{% endif %}{% endblock %}
 {% block description %}{% if article and article.summary %}{{ article.summary | striptags }}{% else %}{{ DESCRIPTION | striptags }}{% endif %}{% endblock %}{% block content %}
-<div class='article-container'>
+<div class='feltnerm-article'>
     <article itemscope itemtype='http://schema.org/BlogPosting'>
-        <div class='row'>
-            <div class='row'>
-                <header class='article-header'>
-                    <h1 itemprop='name'><a href='#' itemprop='url'>{{ article.title }}</a></h1>
-                </header>
-            </div>
-            <div class='row article-meta'>
-                <span class='article-meta-date'>
-                    Written on <time itemprop='datePublished' datetime='{{ article.date.isoformat() }}' content='{{ article.date.isoformat() }}'>{{ article.date | strftime('%A, %B %d, %Y') }}</time>
-                </span>
-            </div>
+        <header class='feltnerm-article-header'>
+            <h1 itemprop='name'><a href='#' itemprop='url'>{{ article.title }}</a></h1>
+        </header>
+        <div class='feltnerm-article-meta'>
+            <span class='feltnerm-article-meta-date'>
+                Written on <time itemprop='datePublished' datetime='{{ article.date.isoformat() }}' content='{{ article.date.isoformat() }}'>{{ article.date | strftime('%A, %B %d, %Y') }}</time>
+            </span>
         </div>
-        <div class='row article-content'>
-            <section itemprop='articleBody' class='typeset'>
+        <div class='feltnerm-article-content'>
+            <main itemprop='articleBody' class='typeset'>
                 {{ article.content }}
             </section>
         </div>

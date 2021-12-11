@@ -1,3 +1,8 @@
+html, body , .feltnerm-container {
+  height: 100%;
+  margin: 0;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -9,80 +14,63 @@
 time {
   font-style: italic;
 }
+
+/** syntax highlighting **/
 code {
-  font-family: "Source Code Pro", monospace;
+  font-family: monospace;
 }
+
 .highlight pre {
   background-color: #f7f7f7;
   padding: 16px;
 }
+
 pre > code {
-  font-family: "Source Code Pro", monospace;
+  font-family: monospace;
 }
-/** header **/
-header.site-header {
-  margin-bottom: 21px;
-}
-header.site-header h1 a {
-  font-size: 80%;
-}
-/** content **/
-/** nav **/
-nav.site-nav {
-  padding-top: 16px;
-}
-nav.site-nav ul {
-  list-style-type: none;
-  padding-left: 0px;
-}
-nav.site-nav ul > li {
-  display: inline;
-}
+
+/** helpers */
 span.center {
   display: block;
   text-align: center;
 }
-/** footer **/
-footer.site-footer {
-  text-align: center;
+
+ul.inline-list {
+    list-style-type: none;
+    padding-left: 0px;
 }
-footer.site-footer ul {
-  list-style-type: none;
-  padding-left: 0px;
+
+ol.inline-list {
+    list-style-type: none;
+    padding-left: 0px;
 }
-footer.site-footer ul li {
+
+ol.inline-list > li {
+    display: inline;
+}
+
+ul.inline-list > li {
   display: inline;
 }
-footer.site-footer .footer-copyright {
-  font-family: "Lora", serif;
+
+/** header **/
+/** content **/
+/** nav **/
+/** footer **/
+.feltnerm-site-footer {
+  text-align: center;
 }
+
 /** Page Styles
  **/
 /** Index **/
 /**     header **/
-.article-container .article-meta .article-meta-date {
-  font-family: "Lora", serif;
-}
-ol.index-ol li {
-  list-style-type: none;
-}
-.index-article-meta .index-article-meta-date {
-  font-family: "Lora", serif;
-}
-.index-article-meta .index-article-meta-git ul {
-  list-style-type: none;
-}
-.index-article-meta .index-article-meta-git ul li {
-  display: inline;
-}
-.index-article-header {
-  margin-bottom: 0rem;
-}
 /**     body **/
-.article-container {
-  margin-top: 40px;
-  margin-bottom: 20px;
+.feltnerm-article-container {
+  /* margin-top: 40px; */
+  /* margin-bottom: 20px; */
 }
+
 /**     footer **/
 /** Article **/
 /**     header **/

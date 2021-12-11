@@ -1,4 +1,5 @@
-title: projects
+title: Projects
+show_title: true
 
 This is just a short summary of some of my favorite projects that I am working
 on or have worked on. Most of what I work on is open-source and MIT

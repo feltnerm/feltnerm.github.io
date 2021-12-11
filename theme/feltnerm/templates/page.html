@@ -1,6 +1,15 @@
 {% extends "base.html" %}
-{% block title %}{% if page.title %} {{ page.title | striptags }} | {{ SITENAME_SHORT }}{% else %}{{ SITENAME }}{% endif %}{% endblock %}
+{% block title %}{% if page.show_title == 'true' and page.title %} {{ page.title | striptags }} | {{ SITENAME_SHORT }}{% else %}{{ SITENAME }}{% endif %}{% endblock %}
 {% block description %}{% if page.summary %}{{ page.summary | striptags }}{% else %}{{ DESCRIPTION | striptags }}{% endif %}{% endblock %}
 {% block content %}
-{{ page.content }}
+<div class="feltnerm-page">
+    {% if page.show_title == 'true' and page.title %}
+    <header>
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    </header>
+    {% endif %}
+    <div class='feltnerm-page-content'>
+    {{ page.content }}
+    </div>
+</div>
 {% endblock %}

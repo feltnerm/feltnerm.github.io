@@ -1,51 +1,37 @@
 {% extends "base.html" %}
+{% block title %}blog | {{ SITENAME }}{% endblock %}
 {% block content %}
-<div class='row'>
-    <header class='index-header'>
+<div class="feltnerm-index">
+    <header>
+        <h2><a href="{{ SITEURL }}/blog/">Blog</h2>
     </header>
-</div>
-
-<section>
-    <ol class='index-ol'>
+    {% include "includes/blog-nav.html" %}
+    <ol class='inline-list'>
     {% for article in dates %}
-        <li class='index-article-li'>
-            <div class='row index-article'>
+        <li>
+            <div class='feltnerm-index-article'>
                 <article itemscope itemtype="http://schema.org/BlogPosting">
-                    <div class="row">
-                        <div class='three columns index-article-meta'>
-                            <span class='index-article-meta-date'>
-                                <time itemprop="datePublished" datetime="{{ article.date.isoformat() }}" content="{{ article.date.isoformat() }}">{{ article.date | strftime('%b %d, %Y') }}</time>
-                            </span>
-                        </div>
-                        <div class='nine columns'>
-                            <div class='row index-article-header'>
-                                <header>
-                                    <h4 itemprop="name">
-                                        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
-                                    </h4>
-                                </header>
-                            </div>
-                            <div class='row index-article-about'>
-                                <section itemprop="about" class="typeset">
-                                    {{ article.about }}
-                                </section>
-                            </div>
-                        </div>
+                    <div class='feltnerm-index-article-header'>
+                        <header>
+                            <h3 itemprop="name">
+                                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+                            </h3>
+                        </header>
                     </div>
-                        <!--
-                        <div class='row'>
-                            <div class='col-xs index-article-git'>
-                                <ul>
-                                    <li><a href='#'>view</a></li>
-                                    <li><a href='#'>edit</a></li>
-                                    <li><a href='#'>{{ article.git_add_sha }}</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        -->
+                    <div class='feltnerm-index-article-meta'>
+                        <span class='feltnerm-index-article-meta-date'>
+                            <time itemprop="datePublished" datetime="{{ article.date.isoformat() }}" content="{{ article.date.isoformat() }}">{{ article.date | strftime('%B %d, %Y') }}</time>
+                        </span>
+                    </div>
+                    <div class='feltnerm-index-article-about'>
+                        <section itemprop="about" class="typeset">
+                            {{article.about }}
+                        </section>
+                    </div>
                 </article>
             </div>
         </li>
     {% endfor %}
-</section>
+    </ol>
+</div>
 {% endblock content %}

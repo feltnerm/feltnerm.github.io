@@ -1,4 +1,5 @@
-title: style guide
+title: Style Guide
+show_title: true
 published: true
 
 > This is my living style guide. Its purpose is to show me -- and you -- what

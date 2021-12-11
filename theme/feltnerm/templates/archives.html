@@ -1,13 +1,28 @@
 {% extends "base.html" %}
 {% block title %}archives | {{ SITENAME }}{% endblock %}
 {% block content %}
-    <h1><a href="/posts">Archives</a></h1>
-
-<dl>
-{% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
-    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
+<div class="feltnerm-archives">
+    <header>
+        <h2><a href="{{ SITEURL }}/blog/archive">Archive</a></h1>
+    </header>
+    {% include 'includes/blog-nav.html' %}
+    <dl>
+    {% for article in dates %}
+        <dt>
+            <a href="{{ SITEURL }}/blog/{{ article.date|strftime('%Y') }}/{{ article.date|strftime('%m') }}/{{ article.date|strftime('%d') }}">
+                {{ article.date|strftime('%d') }}
+            </a>
+            <a href="{{ SITEURL }}/blog/{{ article.date|strftime('%Y') }}/{{ article.date|strftime('%m') }}">
+                {{ article.date|strftime('%B') }}
+            </a>
+            <a href="{{ SITEURL }}/blog/{{ article.date|strftime('%Y') }}">
+                {{ article.date|strftime('%Y') }}
+            </a>
+            </time>
+        </dt>
+        <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+    {% endfor %}
+    </dl>
+</div>
 {% endblock %}
 
