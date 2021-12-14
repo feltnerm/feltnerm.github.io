@@ -12,7 +12,7 @@ from pelicanconf import *
 
 DEVELOP = False
 
-SITEURL = 'http://blog.feltnerm.com'
+SITEURL = 'mark.feltner.me'
 FEED_DOMAIN = SITEURL
 FEED_ATOM = 'feeds/atom.xml'
 FEED_RSS = 'feeds/rss.xml'
