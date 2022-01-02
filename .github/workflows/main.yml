@@ -23,9 +23,6 @@ jobs:
     - name: Build site
       run: |
         make publish
-    - name: Copy redirects
-      run: |
-        cp -r content/static/posts output/
     - name: Publish to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.5.0
       with:
