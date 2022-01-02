@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{% if page.show_title == 'true' and page.title %} {{ page.title | striptags }} | {{ SITENAME_SHORT }}{% else %}{{ SITENAME }}{% endif %}{% endblock %}
+{% block title %}{% if page.show_title == 'true' and page.title %} {{ page.title | striptags | lower }} | {{ SITENAME_SHORT }}{% else %}{{ SITENAME }}{% endif %}{% endblock %}
 {% block description %}{% if page.summary %}{{ page.summary | striptags }}{% else %}{{ DESCRIPTION | striptags }}{% endif %}{% endblock %}
 {% block content %}
 <div class="feltnerm-page">
