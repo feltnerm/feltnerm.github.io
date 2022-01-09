@@ -24,7 +24,6 @@ _The University of Wisconsin-Platteville is committed to being the top universit
 
 - Oracle
 - Drupal
-- Git
 
 #### Middleware System Technologies at University of Wisconsin Madison Division of Information Technology, _2009-2011_
 
