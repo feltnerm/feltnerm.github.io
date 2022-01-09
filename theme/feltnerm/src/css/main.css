@@ -53,6 +53,13 @@ ul.inline-list > li {
   display: inline;
 }
 
+.feltnerm-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 /** header **/
 /** content **/
 /** nav **/
