@@ -10,7 +10,7 @@ project's respective issue tracker.
 ### Personal Projects
 
 - [dotfiles](https://github.com/feltnerm/dotfiles) - My semi-curated collection of dotfiles.
-- [bootstrap](https://github.com/feltmer/bootstrap) - One script to setup my environment (dotfiles, common software, etc.) on mac or linux machines. Also used to provision servers and such.
+- [bootstrap](https://github.com/felterm/bootstrap) - One script to setup my environment (dotfiles, common software, etc.) on mac or linux. Also used to provision servers and such.
 - [feltnerm.github.io](https://github.com/feltnerm/feltnerm.github.io) - The content and generator for this site.
 - [docfu](https://github.com/feltnerm/docfu) - A custom-made static site generator that creates the [Fine Uploader documentation](http://docs.fineuploader.com).
 - [... and](https://github.com/feltnerm?tab=repositories) [more.](https://www.npmjs.com/~feltnerm)
