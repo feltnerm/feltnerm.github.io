@@ -28,19 +28,10 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-STATIC_PATHS = [
-    'static/CNAME',
-    'static/robots.txt',
-    'static/hackers.txt',
-    'static/humans.txt'
-]
-
-EXTRA_PATH_METADATA = {
-    'static/CNAME': { 'path': 'CNAME' },
-    'static/robots.txt': { 'path': 'robots.txt' },
-    'static/hackers.txt': { 'path': 'hackers.txt' },
-    'static/humans.txt': { 'path': 'humans.txt' }
-}
+STATIC_PATHS = ['static']
+# ignore "static" and assign the rest of the file path as "path"
+# e.g. static/CNAME -> CNAME
+PATH_METADATA = r'static/(?P<path>.+)'
 
 REPO_HOME = 'https://github.com/feltnerm/blog'
 
