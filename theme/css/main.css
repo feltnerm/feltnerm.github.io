@@ -25,6 +25,10 @@ span.center{
     display:block;
     text-align:center
 }
+span.justify{
+    display:block;
+    text-align:justify;
+}
 ol.inline-list,ul.inline-list{
     list-style-type:none;
     padding-left:0
